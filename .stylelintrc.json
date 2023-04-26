@@ -26,7 +26,19 @@
         ]
       }
     ],
-    "csstree/validator": true
+    "csstree/validator": true,
+    "selector-class-pattern": [
+      "^[a-z]+(-[a-z0-9]+)*$",
+      {
+        "message": "Class names should follow the kebab-case naming convention"
+      }
+    ],
+    "keyframes-name-pattern": [
+      "^[a-z]+(-[a-z0-9]+)*$",
+      {
+        "message": "Keyframe names should follow the kebab-case naming convention"
+      }
+    ]
   },
   "ignoreFiles": [
     "build/**",
