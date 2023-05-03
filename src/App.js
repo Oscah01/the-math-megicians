@@ -1,18 +1,14 @@
-import Calculator from './components/Calculator';
-import Quotes from './components/Quote';
+import './App.css';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom';
+import Nav from './components/Nav';
 
 const App = () => (
-  <div>
-    <Calculator />
-    <div className="quot">
-      <div className="box1">
-        <h3>Quotes:</h3>
-      </div>
-      <div className="box2">
-        <Quotes />
-      </div>
-    </div>
-  </div>
+  <Router>
+    <Nav />
+  </Router>
 );
 
 export default App;
